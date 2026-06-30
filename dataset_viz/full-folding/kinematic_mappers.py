@@ -2,7 +2,6 @@ import math
 
 def map_full_folding_dataset_sample_to_openarm_v1_mujoco_qpos(sample):
   actual_state = sample["observation.state"]
-  print("actual_state", actual_state)
   return [
     math.radians(actual_state[8]),  # left_joint_1.pos
     math.radians(actual_state[9]),  # left_joint_2.pos
@@ -26,7 +25,6 @@ def map_full_folding_dataset_sample_to_openarm_v1_mujoco_qpos(sample):
 
 def map_full_folding_dataset_sample_to_openarm_v2_mujoco_qpos(sample):
   actual_state = sample["observation.state"]
-  print("actual_state", actual_state)
   return [
     math.radians(actual_state[8]),  # left_joint_1.pos
     math.radians(actual_state[9]),  # left_joint_2.pos
