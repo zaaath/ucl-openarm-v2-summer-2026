@@ -1,0 +1,4 @@
+[submodule "arms/openarm_mujoco"]
+	path = arms/openarm_mujoco
+	url = https://github.com/enactic/openarm_mujoco
+	branch = master
